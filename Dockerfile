@@ -46,9 +46,6 @@ RUN GO111MODULE=on go install github.com/jaeles-project/gospider@latest
 # Install hakrawler
 RUN go install github.com/hakluke/hakrawler@latest
 
-# Install Amass
-RUN snap install amass
-
 # Install puredns (requires massdns)
 RUN go install github.com/d3mondev/puredns/v2@latest
 
