@@ -2,6 +2,7 @@ alias nuclei='nuclei -nc -silent'
 alias httpx='httpx -nc -silent'
 alias mapcidr='mapcidr -silent'
 alias naabu='naabu -nc -silent'
+alias python='python3'
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.pdtm/go/bin
