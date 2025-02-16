@@ -31,7 +31,7 @@ ENV PATH=$PATH:/usr/local/go/bin:/root/go/bin:/root/.local/bin:/root/.pdtm/go/bi
 # Install karma_v2
 RUN pip install --break-system-packages shodan mmh3
 RUN go install -v github.com/tomnomnom/httprobe@master
-RUN cd /opt && git clone https://github.com/codingo/Interlace.git && cd Interlace && python setup.py install
+RUN cd /opt && git clone https://github.com/codingo/Interlace.git && cd Interlace && python3 setup.py install
 RUN go install -v github.com/tomnomnom/anew@master
 
 # Install shosubgo
