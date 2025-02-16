@@ -4,5 +4,5 @@ My customized Kali Docker container with my tools and customizations. This allow
 ## Build
 
 ```
-docker run --rm -it -v /opt/wordlists:/wordlists -v $(pwd):/output -e CHAOS_KEY=redacted kali
+docker run --rm -it -v /opt/wordlists:/wordlists -v $(pwd):/data -e CHAOS_KEY=redacted kali
 ```
