@@ -29,7 +29,7 @@ RUN /root/.pdtm/go/bin/nuclei -ut
 ENV PATH=$PATH:/usr/local/go/bin:/root/go/bin:/root/.local/bin:/root/.pdtm/go/bin
 
 # Install karma_v2
-RUN pip install shodan mmh3
+RUN pip install --break-system-packages shodan mmh3
 RUN go install -v github.com/tomnomnom/httprobe@master
 RUN cd /opt && git clone https://github.com/codingo/Interlace.git && cd Interlace && python setup.py install
 RUN go install -v github.com/tomnomnom/anew@master
