@@ -1,7 +1,7 @@
 FROM kalilinux/kali-rolling:latest
 COPY ./includes.rc /root
 RUN echo "source /root/includes.rc" >> /root/.bashrc
-RUN apt update && apt install -y git python3 python3-pip curl wget gcc libpcap-dev nmap masscan tmux libxml2-utils whois dnsutils net-tools iputils-ping netcat-traditional iproute2 iputils-tracepath traceroute tcpdump jq vim nano lolcat ffuf dirsearch massdns
+RUN apt update && apt install -y git python3 python3-pip curl wget gcc libpcap-dev nmap masscan tmux libxml2-utils whois dnsutils net-tools iputils-ping netcat-traditional iproute2 iputils-tracepath traceroute tcpdump jq vim nano lolcat ffuf dirsearch massdns python3-setuptools
 RUN apt-get clean
 
 # Get architecture
